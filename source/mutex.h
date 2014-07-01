@@ -1,4 +1,4 @@
-/* Copyright 2014 Richard Slater */
+/* Copyright 2014 Richard Slater. Open Source under the MIT License */
 
 #ifndef __mutex_h_included__
 #define __mutex_h_included__

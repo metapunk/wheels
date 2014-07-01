@@ -1,5 +1,4 @@
-/* Copyright 2014 Richard Slater */
-/* Open Source under the MIT License */
+/* Copyright 2014 Richard Slater. Open Source under the MIT License */
 
 #include "mutex.h"
 #include "log.h"
@@ -16,7 +15,6 @@ void run_log_tests() {
 	log_print(lf, "Gentlemen. You can't fight in here. This is the war room!");
 	log_print(lf, "End of line, man.");
 	log_close(lf);
-
 }
 
 int main() {

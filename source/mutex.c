@@ -1,5 +1,4 @@
-/* Copyright 2014 Richard Slater */
-/* Open Source under the MIT License */
+/* Copyright 2014 Richard Slater. Open Source under the MIT License */
 
 #include "mutex.h"
 #include "stdlib.h"
