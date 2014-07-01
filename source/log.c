@@ -1,3 +1,6 @@
+/* Copyright 2014 Richard Slater */
+/* Open Source under the MIT License */
+
 #include "log.h"
 #include "mutex.h"
 #include "stdio.h"

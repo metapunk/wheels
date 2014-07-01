@@ -1,4 +1,5 @@
 /* Copyright 2014 Richard Slater */
+/* Open Source under the MIT License */
 
 #include "mutex.h"
 #include "stdlib.h"
@@ -16,6 +17,7 @@ mutex* mutex_create() {
 
 void mutex_destroy(mutex* a_mut) {
 	CloseHandle(a_mut->handle);
+	free(a_mut);
 }
 
 void mutex_lock(mutex* a_mut) {
@@ -41,6 +43,7 @@ mutex* mutex_create() {
 }
 
 void mutex_destroy(mutex* a_mut) {
+	pthread_mutex_destroy(a_mut->handle);
 	free(a_mut->handle);
 	free(a_mut);
 }
