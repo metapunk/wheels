@@ -21,7 +21,7 @@ void log_close(log_file* a_log_file) {
 
 void log_print(log_file* a_log_file, const char* a_msg) {
 	mutex_lock(a_log_file->attached_mutex);
-	fprintf(a_log_file->attached_file, a_msg);
+	fprintf(a_log_file->attached_file, "%s", a_msg);
 	fprintf(a_log_file->attached_file, "\n");
 	mutex_unlock(a_log_file->attached_mutex);
 }
